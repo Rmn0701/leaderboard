@@ -40,10 +40,18 @@
 
         </tbody>
     </table>
+  
+
+    <div class="flex justify-between items-center p-4 border-t">
+        <div class="flex space-x-2">
+            {{$data->links()}}
+        </div>
     
-    <div class="pagination">
-        {{$data->links()}}
+        <div class="text-gray-600">
+            {{$data->firstItem()}} to {{$data->lastItem()}} of {{$data->total()}} users
+        </div>
     </div>
+    
 </div>
 
 </body>
